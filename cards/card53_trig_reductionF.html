@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<!--<html lang="ru">-->
+<head>
+<meta charset="UTF-8">
+<title>YT Maths Playground  © OliSoft 2026 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Interactive mathematical playground: calculator, function grapher, geometry tools.">
+<meta name="author" content="OliSoft">
+<link rel="stylesheet" href="math.css">
+<link rel="icon" type="image/png" href="images/ytmath_icon.png">
+
+
+<style>
+	
+
+table.trig{
+    width:600px;
+    margin:25px 0;
+    font-size:1rem;
+    border:3px solid #B8D6D5;
+    border-radius:8px;
+    border-collapse:separate;
+    border-spacing:0;
+    overflow:hidden;
+}
+
+table.trig th,table.trig td{
+    padding:14px 12px;
+    text-align:center;
+    white-space:nowrap;
+    border-right:1px solid #B8D6D5;
+    border-bottom:1px solid #B8D6D5;
+}
+
+/* Верхняя строка */
+table.trig thead th{background:#D1E8E6;font-weight:700;}
+/* Левая колонка */
+table.trig tbody th{background:#D1E8E6;font-weight:700;}
+
+/* Чередование строк */
+table.trig tbody tr:nth-child(odd) td{background:#E6F3F2;}
+table.trig tbody tr:nth-child(even) td{background:#F9FDFD;}
+
+/* Убираем лишние линии */
+table.trig tr:last-child td,table.trig tr:last-child th{border-bottom:none;}
+table.trig td:last-child,table.trig th:last-child{border-right:none;}
+table.trig i{font-style:italic;}
+</style>
+</head>
+<body>
+
+
+
+<!-- ===== HEADER ===== -->
+<div class="main-title">
+<img src="images/ytmath_logo.png">
+YarnTale Math Playground
+</div>
+
+<!-- ===== NAV MENU ===== -->
+<div class="link-grouph">
+<a class="link-buttonh" href="https://studioyarntale.github.io/yt/" target="_blank">🏡YarnTale</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math1/" target="_blank">🧮Math Playground</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math1/storytime/" target="_blank">📖Story Time</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math1/storytime/mathmap_en.html" target="_blank">🎓Math School</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math1/quiz/" target="_blank">❓Questions and Quizzes</a>
+</div>
+
+
+
+
+<!-- ===== MAIN FRAME ===== -->
+<div class="main-wrapper">
+<h2 style="color:#5a8d8a;">Table of Trigonometric Reduction Formulae</h2>
+<div class="content-area">
+
+<!-- ============================= -->
+<!-- *****  The CONTENT AREA ***** -->
+<!-- ============================= -->
+
+
+
+
+
+<table class="trig">
+ <thead>
+        <tr>
+            <th><i>β°</i></th>
+            <th>-α</th>
+            <th>90°-α</th>
+            <th>90°+α</th>
+            <th>180°-α</th>
+            <th>180°+α</th>
+            <th>270°-α</th>
+            <th>270°+α</th>
+            <th>360°-α</th>
+            <th>360°+α</th>
+        </tr>
+        <tr>
+            <th><i>β rad</i> </th>
+            <th><b>-α</b></th>
+            <th><b>π/2-α</b></th>
+            <th><b>π/2+α</b></th>
+            <th><b>π-α</b></th>
+            <th><b>π+α</b></th>
+            <th><b>3π/2-α</b></th>
+            <th><b>3π/2+α</b></th>
+            <th><b>2π-α</b></th>
+            <th><b>2π+α</b></th>
+        </tr>
+    </thead>
+    <tbody>      
+        <tr>
+            <td><i><b>Quadrant β</b></i></td>
+            <td><b>IV</b></td>
+            <td><b>I</b></td>
+            <td><b>II</b></td>
+            <td><b>II</b></td>
+            <td><b>III</b></td>
+            <td><b>III</b></td>
+            <td><b>IV</b></td>
+            <td><b>IV</b></td>
+            <td><b>I</b></td>
+</tr> 
+<tr>
+    <th>sin(<i>β</i>)</th>
+    <td>-sin(α)</td>
+    <td>cos(α)</td>
+    <td>cos(α)</td>
+    <td>sin(α)</td>
+    <td>-sin(α)</td>
+    <td>-cos(α)</td>
+    <td>-cos(α)</td>
+    <td>-sin(α)</td>
+    <td>sin(α)</td>
+</tr>
+
+<tr>
+    <th>cos(<i>β</i>)</th>
+    <td>cos(α)</td>
+    <td>sin(α)</td>
+    <td>-sin(α)</td>
+    <td>-cos(α)</td>
+    <td>-cos(α)</td>
+    <td>-sin(α)</td>
+    <td>sin(α)</td>
+    <td>cos(α)</td>
+    <td>cos(α)</td>
+</tr>
+
+<tr>
+    <th>tg(<i>β</i>)</th>
+    <td>-tg(α)</td>
+    <td>ctg(α)</td>
+    <td>-ctg(α)</td>
+    <td>-tg(α)</td>
+    <td>tg(α)</td>
+    <td>ctg(α)</td>
+    <td>-ctg(α)</td>
+    <td>-tg(α)</td>
+    <td>tg(α)</td>
+</tr>
+<tr>
+    <th>ctg(<i>β</i>)</th>
+    <td>-ctg(α)</td>
+    <td>tg(α)</td>
+    <td>-tg(α)</td>
+    <td>-ctg(α)</td>
+    <td>ctg(α)</td>
+    <td>tg(α)</td>
+    <td>-tg(α)</td>
+    <td>-ctg(α)</td>
+    <td>ctg(α)</td>
+</tr>
+    </tbody>
+</table>
+
+
+</div> <!--content-area-->
+<img src="images/unit.jpg" alt="unit circle" style="width:900px;"/>
+
+
+
+</div><!--main-wrapper-->
+<div class="olisoft-footer">2026 © OliSoft — YarnTale Math Playground</div>
+</body>
+</html>
