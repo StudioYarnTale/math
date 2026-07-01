@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Studio YarnTale — The School of Mathematics © OliSoft 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Interactive mathematical playground: calculator, function grapher, geometry tools.">
+<meta name="author" content="OliSoft">
+<link rel="stylesheet" href="math.css">
+<link rel="icon" type="image/png" href="images/ytmath_icon.png">
+
+<style>
+    
+/* ===== CONTACT FORM — YarnTale style ===== */
+.contact-box{
+max-width:600px;
+margin:10px auto;
+padding:50px;
+padding-top:10px;
+background:#f5fbfa;
+border:2px solid #78AFAC;
+border-radius:20px;
+box-shadow:0 6px 18px rgba(120,175,172,0.18);
+background:linear-gradient(180deg, #ffffff 0%,#f5fbfa 100%);
+}
+
+/* Заголовок */
+.contact-box h2{
+font-size:28px;
+color:#5a8d8a;
+margin-top:0px;
+margin-bottom:10px;
+text-align:center;
+}
+
+/* Описание */
+.contact-box p{
+font-size:15px;
+color:#5a8d8a;
+margin-bottom:10px;
+text-align:center;
+}
+
+/* Подписи */
+.contact-box label{
+font-size:15px;
+color:#5a8d8a;
+font-weight:bold;
+display:block;
+margin-top:10px;
+}
+
+/* Поля ввода */
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:10px 12px;
+border:2px solid #c7dede;
+border-radius:12px;
+background:#ffffff;
+font-size:15px;
+color:#5c4633;
+transition:all 0.2s ease;
+}
+
+/* При фокусе */
+.contact-box input:focus,
+.contact-box textarea:focus{
+outline:none;
+border-color:#78AFAC;
+background:#f9fdfd;
+box-shadow:0 0 6px rgba(120,175,172,0.25);
+}
+
+/* Кнопка */
+.contact-box button{
+margin-top:10px;
+padding:10px 12px;
+background:#78AFAC;
+color:white;
+border:none;
+border-radius:14px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:all 0.2s ease;
+}
+
+/* Hover кнопки */
+.contact-box button:hover{
+background:#5a8d8a;
+transform:translateY(-2px);
+box-shadow:0 4px 10px rgba(90,141,138,0.3);
+}
+
+/* Сообщение статуса */
+#formStatus{
+margin-top:12px;
+font-size:14px;
+color:#5a8d8a;
+text-align:center;
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <div class="header-wrapper">
+
+    <!-- ===== Lang buttons ===== -->
+<div class="lang-switch">
+<a class="lang-btn" href="contact_en.html">EN</a>
+<a class="lang-btn" href="contact_ru.html">RU</a>
+<a class="lang-btn" href="contact_de.html">DE</a>
+</div>
+<!-- ===== HEADER ===== -->
+<div class="main-title">
+<a href="https://studioyarntale.github.io/math/index.html" target="_blank"><img src="images/ytmath_logo.png"></a>
+Studio YarnTale - The School of Mathematics 🎓
+
+</div>
+<img src="images/insight_top.jpg" alt ="Mathematical Insight" style="width: 990px;"/>
+</div>
+
+
+<!-- ===== NAV MENU EN===== -->
+<div class="link-grouph">
+<a class="link-buttonh" href="https://studioyarntale.github.io/math/storytime/people_en.html" target="_blank">🏡 YarnTale World</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math/home/insight_en.html" target="_blank">🎓 Maths Insight</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math/home/playground_en.html" target="_blank">🧮 Maths Playground</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math/home/mathmap_en.html" target="_blank">📚 Maths Map</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math/index.html" target="_blank">🗝️ Studio YT</a>
+<a class="link-buttonh" href="https://studioyarntale.github.io/math/home/contact_en.html" target="_blank">✉️ Contact Us</a>
+</div>
+
+<!-- ===== MAIN FRAME ===== -->
+<div class="main-wrapper">
+<div class="content-area">
+
+<!-- ============================= -->
+<!-- *****  The CONTENT AREA ***** -->
+<!-- ============================= -->
+
+
+
+<div class="contact-box">
+<h2>Send a message</h2>
+<p>If you wish, you can send a short message. I read letters and reply.</p>
+<form id="contactForm" action="https://formspree.io/f/yourID" method="POST">
+<label>Subject</label>
+<input type="text" name="subject" required><label>Message</label>
+<textarea name="message" rows="5" required></textarea>
+<label>Your name</label><input type="text" name="name">
+<label>Email</label><input type="email" name="email">
+<!-- анти-бот поле -->
+<input type="text" name="website" style="display:none">
+<button type="submit">📩 Send message</button>
+</form>
+<p id="formStatus"></p>
+<a class="link-button" href="mailto:studio.yarntale@gmail.com?subject=YarnTale">📩 studio.yarntale@gmail.com</a>
+</div>
+
+
+</div> <!--content-area-->
+</div><!--main-wrapper-->
+
+<!-- ===FOOTER=== -->
+<div class="olisoft-footer" style="margin:10px;">
+2026 © OliSoft | Studio YarnTale — The School of Mathematics | All rights reserved.
+
+<div class="social-links">
+<a href="https://www.facebook.com/yarntale.math/" target="_blank"><img src="images/icons/facebook.jpg" alt="Facebook"></a>
+<a href="https://www.youtube.com/@YarnTaleStudio-v1o" target="_blank"><img src="images/icons/youtube.jpg" alt="YouTube"></a>
+<a href="https://www.instagram.com/sophieowlcrochet/" target="_blank"><img src="images/icons/instagram.jpg" alt="Instagram"></a>
+<a href="https://uk.pinterest.com/yarntale_crochet/yarntale/" target="_blank"><img src="images/icons/pinterest.jpg" alt="Pinterest"></a>
+</div>
+</div>
+
+<script>
+const form = document.getElementById("contactForm")
+const status = document.getElementById("formStatus")
+form.addEventListener("submit", async function(e){
+e.preventDefault()
+let data = new FormData(form)
+let response = await fetch(form.action,{
+method:form.method,
+body:data,
+headers:{ 'Accept':'application/json'}
+})
+if(response.ok){
+status.innerHTML="Message sent. Thank you."
+form.reset()
+}else{
+status.innerHTML="Something went wrong."
+}
+})
+</script>
+</body>
+</html>
+
+
+
+
+
+
