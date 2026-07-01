@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Interactive mathematical playground: Storytime.">
 <meta name="author" content="OliSoft">
-<link rel="stylesheet" href="story.css">
+<link rel="stylesheet" href="math.css">
 <link rel="icon" type="image/png" href="images/ytmath_icon.png">
+
 
 <style>
         .math-container {
@@ -16,15 +17,17 @@
             gap: 20px;
             padding: 10px;
             font-family: "Comic Sans MS", Cambria, Arial, sans-serif, cursive;
-            font-size:14px;
+            font-size:12px;
             line-height: 1.3;
+           color:#78AFAC;
+           margin:-20px;
 
         }
         .mathmap {
             border: 1px solid #ccc;
-            padding: 15px;
+            padding: 5px;
             border-radius: 8px;
-            min-width: 250px;
+            min-width: 200px;
             flex: 1;
             background-color: #ffffff;
         }
@@ -34,22 +37,27 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size:18px;
+            font-size:14px;
         }
     </style>
 </head>
 <body>
 
+<!-- ===== HEADER ===== -->
+    <div class="header-wrapper">
+    <!-- ===== Lang buttons ===== -->
+<div class="lang-switch">
+<a class="lang-btn" href="mathmap_en.html">EN</a>
+<a class="lang-btn" href="mathmap_ru.html">RU</a>
+<a class="lang-btn" href="mathmap_de.html">DE</a>
+</div>
+<!-- ===== HEADER ===== -->
 <div class="main-title">
 <a href="https://studioyarntale.github.io/math/index.html" target="_blank"><img src="images/ytmath_logo.png"></a>
-YarnTale Maths Playground - Mathematical Map
+Studio YarnTale - The School of Mathematics 🎓<br/>
 </div>
-
-  	<div class="lang-switch">
-		<a href="mathmap_en.html">EN</a>
-		<a href="mathmap_ru.html">RU</a>
-		<a href="mathmap_de.html">DE</a>
-	</div>
+<img src="images/insight_top.jpg" alt ="Mathematical Insight" style="width: 990px;"/>
+</div>
 	
 	
 <!-- ===== NAV MENU EN===== -->
