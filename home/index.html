@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<!--
-<html lang="ru">
--->
 <head>
 <meta charset="UTF-8">
-<title>Studio YarnTale — The School of Mathematics © OliSoft 2026</title>
+<title>YT Maths Playground  © OliSoft 2026 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Interactive mathematical playground: calculator, function grapher, geometry tools.">
 <meta name="author" content="OliSoft">
 <link rel="stylesheet" href="math.css">
 <link rel="icon" type="image/png" href="images/ytmath_icon.png">
-
-
 <style>
-    .content-layout{display:flex; align-items:flex-start;  gap:25px;}
-</style>
+/* ===== общий layout ===== */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9fdfd;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
 
+.link-button {
+    display: block;
+    margin: 5px auto;
+    padding: 5px 18px;
+    width: 500px;
+    background: #ffffff;
+    border: 1px solid #c7dede;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #4b2a91;
+    color: #669999;
+    transition: all 0.2s ease;
+}
+.link-button:hover { background: #e6f3f2; border-color: #6da8a4;   transform: scale(1.02); color: #336666;}
+
+
+</style>
 </head>
 <body>
-    <div class="header-wrapper">
 
-    <!-- ===== Lang buttons ===== -->
-<div class="lang-switch">
-<a class="lang-btn" href="about_en.html">EN</a>
-<a class="lang-btn" href="about_ru.html">RU</a>
-<a class="lang-btn" href="about_de.html">DE</a>
-</div>
-<!-- ===== HEADER ===== -->
-<div class="main-title">
-<a href="https://studioyarntale.github.io/math/index.html" target="_blank"><img src="images/ytmath_logo.png"></a>
-Studio YarnTale - The School of Mathematics 🎓<br/>
-</div>
-<img src="images/about_top.jpg" alt ="About me" style="width: 990px;"/>
-</div>
 <!-- ===== NAV MENU EN===== -->
 <div class="link-grouph">
 <a class="link-buttonh" href="https://studioyarntale.github.io/math/storytime/people_en.html" target="_blank">🏡 YarnTale World</a>
@@ -44,96 +53,51 @@ Studio YarnTale - The School of Mathematics 🎓<br/>
 <a class="link-buttonh" href="https://studioyarntale.github.io/math/home/contact_en.html" target="_blank">✉️ Contact Us</a>
 </div>
 
-<!-- ===== MAIN FRAME ===== -->
-<div class="main-wrapper" style="padding-top:0px;">
-<h2 style="color:#5a8d8a;">A Little About Me and the World of YarnTale<br/> &nbsp; &nbsp; &nbsp; <img src="images/line.jpg"/></h2>
+<br/>
 
-<div class="content-layout">
+<div class="title"><img src="images/ytmath_logo.png" style="width:90px; margin-bottom:-20px; margin-left:-30px; margin-right:-5px;"/>YarnTale Math Playground: 📖 Story Time</div>
+<div class="main-wrapper">
+<div class="container links-panel">
 
-
-<!-- ============================= -->
-<!-- *****  The CONTENT AREA ***** -->
-<!-- ============================= -->
-<aside class="sidebar">
 <div class="link-group">
-<!-- ====sidebar links EN ===== -->
-🧭 Explore🌿 
-<a class="link-button" href="https://studioyarntale.github.io/math/home/main_en.html" target="_blank">Home page</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/about_en.html" target="_blank">About Me & YarnTale</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/insight_en.html" target="_blank">Maths Insight</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/playground_en.html" target="_blank">Maths Playground</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/parent_en.html" target="_blank">Entry for Parents</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/child_en.html" target="_blank">For Kids Only</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/mathmap_en.html" target="_blank">📚 Maths Curriculum</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/dictionary.html" target="_blank">Maths Dictionary</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/contact_en.html" target="_blank">Contact Us</a>
-🎓 Learning Resources
-<a class="link-button" href="https://studioyarntale.github.io/math/storytime/people_en.html" target="_blank">🏡 YarnTale World</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/cards/formulae.html" target="_blank">🧮 Formulae</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/cards/index.html" target="_blank">📐 Learning Cards</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/tools/index.html" target="_blank">🧮 Interactive Math Tools</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/storytime/index.html" target="_blank">📐 Maths stories</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/quiz/index.html" target="_blank">❓ Quizzes, Exercises & Problems</a>
-🌿 Recommended Resources
-<a class="link-button" href="#">🏆 Olympiad Problems</a>
-<a class="link-button" href="#">📝 Revision Notes</a>
-<a class="link-button" href="#">📖 Recommended Books</a>
-<a class="link-button" href="#">🎯 GCSE Past Papers</a>
-<a class="link-button" href="#">🎓 A-Level Past Papers</a>
-
+<a class="link-button" href="people_ru.html" >Мир YarnTale</a>
+<a class="link-button" href="math_ru.html" >🧮 Что такое математика?</a>
+<a class="link-button" href="01_ru.html" >👑 Сказка о Принцессе🤴Zero🌹и Принце 👸One🤍</a>
+<a class="link-button" href="whole_ru.html" >🏰 Королевство Чисел растет</a>
+<a class="link-button" href="fraction_ru.html" >Таинственная точка и великий спор дробей</a>
+<a class="link-button" href="applelaw_ru.html" >Петя и яблочные открытия</a>
+<a class="link-button" href="count1_ru.html" >Законы царства Чисел</a>
+<a class="link-button" href="division_ru.html" >Честное деление</a>
+<a class="link-button" href="number_ru.html" >Какие бывают числа</a>
+<a class="link-button" href="pi_ru.html" >Иррациональные числа</a>
+<a class="link-button" href="whole_ru.html" >Как записывают числа</a>
 </div>
-</aside>
 
-<main class="about">
-
-<p>Hello!<br/>
-My name is Grandma Oli. 😊
-<br/><br/>
-Many years ago I was a little girl too. I was curious and quick to learn, but at the same time I had a very vivid imagination. When I grew up, I decided to study Physics and Mathematics at university. I think it was because these subjects gave me the freedom to explore the most incredible ideas.
-<br/><br/>
-During my third year at university I saw a computer for the first time. It looked nothing like today's laptops. It filled almost an entire room, was about the size of a large refrigerator, and programs were entered using punched cards. These were stiff paper cards with tiny holes punched in carefully chosen positions. Every letter, number and symbol had its own unique pattern of holes. Those computers were called Mainframes.
-<br/><br/>
-It was love at first sight. Especially after our department opened a computer classroom with display terminals. I could happily stay there until late in the evening. Since then, computers have been my good friends. I learned to program in FORTRAN and BASIC.
-<br/><br/>
-Later I worked as a school teacher, taught Physics and Mathematics at university, prepared students for university entrance, carried out scientific research and eventually earned my PhD.
-<br/><br/>
-Life later brought me to England. Here I continued learning, studied programming, designed websites, worked as an interpreter and tried many different professions. But the thing I have always enjoyed most is learning something new myself and helping other people learn.
-<br/><br/>
-When my granddaughter Nastya was born, I wanted to create a special world just for her — a place where we could play, think, read fairy tales, solve puzzles, draw, make things with our hands and discover new ideas together. That is how YarnTale was born.
-<br/><br/>
-At first it was simply a gift for one little girl. Then I realised that perhaps other children might enjoy this world as well. So now everyone who loves discovering new things is welcome to join our adventure.
-<br/><br/>
-Like the fairy-tale world itself, YarnTale is alive. It keeps growing and changing. I am constantly creating new characters, writing stories, designing interactive activities, making learning cards and inventing mathematical adventures featuring the YarnTale characters.
-<br/><br/>
-There is much more here than mathematics. You will also find fairy tales, crafts, drawing and creative activities. In fact, all the characters first appeared as little crochet toys that I made myself. That is where the name <b>YarnTale</b> comes from — fairy tales growing from a ball of yarn.
-<br/><br/>
-Here mathematics is not a separate abstract subject. It is woven naturally into everyday life. Children begin to understand why mathematical ideas matter and where they appear all around us.
-<br/><br/>
-People often say that visitors trust an author more if they can see a portrait. Well then... if it has to be done, it has to be done. 😊 Here I am! Please take a look. That's me, riding a unicorn just as every proper fairy should. Beside me is little Nastya, while the heavenly creatures watch us with great excitement — or perhaps a little surprise. This is exactly how Nastya imagined me.
-<br/><br/>
-And if you like, you can simply call me <b>Grandma Oli</b>. I think it is the warmest name anyone could have.
-<br/><br/>
-Welcome to YarnTale! 🌿
-<br/><br/>
-<img src="images/me.jpg" alt="Grandma Oli" style="width:650px;"/>
-</p>
-
-</main>
 
 
 
 </div> <!--content-area-->
-
 </div><!--main-wrapper-->
 
+<!-- ===FOOTER=== -->
 <div class="olisoft-footer" style="margin:10px;">
 2026 © OliSoft | Studio YarnTale — The School of Mathematics | All rights reserved.
+2026 © OliSoft | Studio YarnTale — Школа математики | Все права защищены.
+2026 © OliSoft | Studio YarnTale — Mathematische Spielwiese | Alle Rechte vorbehalten.
+
 <div class="social-links">
 <a href="https://www.facebook.com/yarntale.math/" target="_blank"><img src="images/icons/facebook.jpg" alt="Facebook"></a>
 <a href="https://www.youtube.com/@YarnTaleStudio-v1o" target="_blank"><img src="images/icons/youtube.jpg" alt="YouTube"></a>
 <a href="https://www.instagram.com/sophieowlcrochet/" target="_blank"><img src="images/icons/instagram.jpg" alt="Instagram"></a>
 <a href="https://uk.pinterest.com/yarntale_crochet/yarntale/" target="_blank"><img src="images/icons/pinterest.jpg" alt="Pinterest"></a>
+
+<a href="https://vk.com/yarntalemath" target="_blank"><img src="images/icons/vk.jpg" alt="VK"></a>
+<a href="https://ok.ru/group/70000041335822" target="_blank"><img src="images/icons/ok.jpg" alt="Одноклассники"></a>
+<a href="https://www.facebook.com/yarntalemath.ru/" target="_blank"><img src="images/icons/rutube.jpg" alt="RuTube"></a>
+<a href="https://t.me/StudioYarntale" target="_blank"><img src="images/icons/telegram.jpg" alt="Telegram"></a>
 </div>
-</div>
+</div><!-- ===FOOTER=== -->
+
 </body>
 </html>
+
