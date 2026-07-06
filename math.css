@@ -156,17 +156,13 @@ font-style: italic;
 
 /* ===== Rus, Eng, De  MENU ===== */
 
-.lang-switch {
-	position: absolute;
-	top: 5px;
-	right: 20px;
-	font-size: 10px;   /* можно 14–18, под кружево */
-}
+
 .lang-switch{
     position:absolute;
     top:12px;
     right:18px;
     display:flex;
+    font-size: 10px; 
     gap:6px;
     z-index:100;
 }
