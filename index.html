@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Interactive mathematical playground: calculator, function grapher, geometry tools.">
 <meta name="author" content="OliSoft">
-<link rel="stylesheet" href="math.css">
+<link rel="stylesheet" href="home/math.css">
 <link rel="icon" type="image/png" href="home/images/ytmath_icon.png">
 
 <style>
@@ -63,8 +63,37 @@ body{background:linear-gradient(to bottom, #DBDED1, #f3fbfb, #e8f5f4 );}
 .about{top:450px;left:290px; width:420px; color:#444; font-size:14px; line-height:1.2;}
 .about h3{margin:0 0 8px 0; color:#2d5f5d;}
 
+/* ---------- Bottom tree ---------- */
+.main_tree{ width:1000px; height:380px; margin:0 auto; background-size:contain;
+background:url("home/images/main_tree.jpg") center center no-repeat;}
 
+.main_tree a{display:block; width:100%; height:100%;}
+.main_tree:hover{    background-image:url("home/images/main_tree_hover.jpg");}
 
+.kids-sign{
+    position:absolute;
+    top:915px;          /* подгони под табличку */
+    left:48.5%;
+    transform:translateX(-50%);
+    width:180px;
+    font-family:"Comic Sans MS", cursive;
+    text-align:center;
+    color:#5a4630;
+    font-size:20px;
+    font-weight:bold;
+    line-height:1;
+    text-shadow: 1px 1px 2px rgba(255,255,255,.8), 0 0 6px rgba(255,255,255,.5);}
+
+.kids-sign .small{
+    display:block;
+    margin-top:7px;
+    font-size:14px;
+    font-weight:normal;
+    line-height:1;
+    color:#6a5338;
+}
+.kids-sign b{ transition:color .35s ease;}
+.main_tree:hover .kids-sign b{color:#990000;}
 </style>
 
 
@@ -87,7 +116,7 @@ Studio YarnTale - The School of Mathematics 🎓
 
 
 <!-- ===== NAV MENU EN===== -->
-<div class="link-group" style="font-size:13px; margin-top:-20px; margin-bottom:-10px;">
+<div class="link-group" style="font-size:13px; margin-top:-10px; margin-bottom:-10px;">
 <a class="link-buttonh" href="https://studioyarntale.github.io/math/storytime/people_en.html" target="_blank">🏡 YarnTale World</a>
 <a class="link-buttonh" href="https://studioyarntale.github.io/math/home/insight_en.html" target="_blank">🎓 Maths Insight</a>
 <a class="link-buttonh" href="https://studioyarntale.github.io/math/home/playground_en.html" target="_blank">🧮 Maths Playground</a>
@@ -126,23 +155,36 @@ Take your time. Look around. Ask questions.<br>
 Discover how mathematics helps us understand nature, science<br />and the world around us.<br><br>
 <b>This is a place where mathematics feels at home.</b>
 </div>
-
 </div>
-<!-- ===FOOTER=== -->
-<div class="olisoft-footer" style="margin:-10px;">
-2026 © OliSoft | Studio YarnTale — The School of Mathematics | All rights reserved.
 
+
+
+
+<!-- ===Social=== -->
+<div class="olisoft-footer" style="margin:0px;">
 <div class="social-links">
 <a href="https://www.facebook.com/yarntale.math/" target="_blank"><img src="home/images/icons/facebook.jpg" alt="Facebook"></a>
 <a href="https://www.youtube.com/@YarnTaleStudio-v1o" target="_blank"><img src="home/images/icons/youtube.jpg" alt="YouTube"></a>
 <a href="https://www.instagram.com/sophieowlcrochet/" target="_blank"><img src="home/images/icons/instagram.jpg" alt="Instagram"></a>
 <a href="https://uk.pinterest.com/yarntale_crochet/yarntale/" target="_blank"><img src="home/images/icons/pinterest.jpg" alt="Pinterest"></a>
-
 <a href="https://vk.com/yarntalemath" target="_blank"><img src="home/images/icons/vk.jpg" alt="VK"></a>
 <a href="https://ok.ru/group/70000041335822" target="_blank"><img src="home/images/icons/ok.jpg" alt="Одноклассники"></a>
 <a href="https://www.facebook.com/yarntalemath.ru/" target="_blank"><img src="home/images/icons/rutube.jpg" alt="RuTube"></a>
 <a href="https://t.me/StudioYarntale" target="_blank"><img src="home/images/icons/telegram.jpg" alt="Telegram"></a>
 </div>
-</div><!-- ===FOOTER=== -->
+</div><!-- ===Social=== -->
+
+
+<!-- ===Bottom tree=== -->
+<div class="main_tree"><a href="children_en.html">
+    <span class="kids-sign">
+    <b>Entry for Kids</b><br>
+    <span class="small">Adults are welcome,<br>only if accompanied<br>🗝️<b>by a child</b>🐿️</span>
+</span>
+</a></div>
+
+<!-- ===FOOTER=== -->
+<div class="olisoft-footer" style="margin-top:-20px;">2026 © OliSoft | Studio YarnTale — The School of Mathematics | All rights reserved.</div>
+
 </body>
 </html>
