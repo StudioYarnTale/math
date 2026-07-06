@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<!--
-<html lang="ru">
--->
 <head>
 <meta charset="UTF-8">
 <title>Studio YarnTale — The School of Mathematics © OliSoft 2026</title>
@@ -12,30 +9,114 @@
 <link rel="stylesheet" href="math.css">
 <link rel="icon" type="image/png" href="images/ytmath_icon.png">
 
-
 <style>
-    .content-layout{display:flex; align-items:flex-start;  gap:25px;}
+body{background:linear-gradient(to bottom, #DBDED1, #f3fbfb, #e8f5f4 );}
+.main-title{
+    align-items:center;
+    justify-content:center;
+    gap:0px;
+    font-size:28px;
+    font-weight:bold;
+    color:#7BA4A2;
+    margin:10px;
+    text-align:center;
+}
+
+/* ---------- HERO ---------- */
+.hero{ position:relative; width:1000px; margin:20px auto;;}
+.hero img{ display:block; width:1000px; border-radius:25px; border:1px solid #78AFAC; box-shadow: 0 8px 24px rgba(120,175,172,.18);}
+
+/* Общий стиль */
+.hero div{    position:absolute;    font-family:"Comic Sans MS";    text-align:center;}
+/* Curiosity */
+.curiosity{ top:18px; left:0; width:1000px; color:#8CB4B2; font-size:20px; font-style:italic; font-weight:bold;}
+/* Welcome */
+.welcome{ top:50px; left:0; width:1000px; color:#336666; font-size:26px; font-weight:bold;}
+/* slogan */
+.slogan{ top:95px; left:0px; width:1000px; color:#336666; font-size:16px; font-style:italic;}
+/* ---------- KIDS ---------- */
+.kids{ top:130px; left:290px; width:180px; }
+/* ---------- TEENS ---------- */
+.teens{ top:130px; left:520px; width:180px;}
+/* обе кнопки */
+.portal{
+    background:rgba(255,255,255,.40);
+    border:1px solid rgba(90,141,138,.40);
+    border-radius:20px;
+    backdrop-filter:blur(1px);
+    padding:5px 10px;
+}
+.portal:hover{
+    background:rgba(255,255,255,.60);
+    border:1px solid rgba(90,141,138,.65);
+    backdrop-filter:blur(2px);
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px rgba(90,141,138,.18);
+}
+
+.portal a{text-decoration:none; color:#2d5f5d;}
+.portal h2{margin:0; font-size:14px; color:#2d5f5d;}
+.portal p{margin:4px 0 0;  font-size:10px;}
+.portal{    transition:all .25s ease;}
+
+/* ---------- ABOUT ---------- */
+.about{top:450px;left:290px; width:420px; color:#444; font-size:14px; line-height:1.2;}
+.about h3{margin:0 0 8px 0; color:#2d5f5d;}
+
+/* ---------- Bottom tree ---------- */
+.main_tree{ width:1000px; height:380px; margin:0 auto; background-size:contain;
+background:url("images/main_tree.jpg") center center no-repeat;}
+
+.main_tree a{display:block; width:100%; height:100%;}
+.main_tree:hover{    background-image:url("images/main_tree_hover.jpg");}
+
+.kids-sign{
+    position:absolute;
+    top:915px;          /* подгони под табличку */
+    left:48.5%;
+    transform:translateX(-50%);
+    width:180px;
+    font-family:"Comic Sans MS", cursive;
+    text-align:center;
+    color:#5a4630;
+    font-size:20px;
+    font-weight:bold;
+    line-height:1;
+    text-shadow: 1px 1px 2px rgba(255,255,255,.8), 0 0 6px rgba(255,255,255,.5);}
+
+.kids-sign .small{
+    display:block;
+    margin-top:7px;
+    font-size:14px;
+    font-weight:normal;
+    line-height:1;
+    color:#6a5338;
+}
+.kids-sign b{ transition:color .35s ease;}
+.main_tree:hover .kids-sign b{color:#990000;}
 </style>
+
 
 </head>
 <body>
-    <div class="header-wrapper">
-
+<div class="header-wrapper">
     <!-- ===== Lang buttons ===== -->
 <div class="lang-switch">
-<a class="lang-btn" href="about_en.html">EN</a>
-<a class="lang-btn" href="about_ru.html">RU</a>
-<a class="lang-btn" href="about_de.html">DE</a>
+<a class="lang-btn" href="main_en.html">EN</a>
+<a class="lang-btn" href="main_ru.html">RU</a>
+<a class="lang-btn" href="main_de.html">DE</a>
 </div>
+
 <!-- ===== HEADER ===== -->
 <div class="main-title">
 <a href="https://studioyarntale.github.io/math/index.html" target="_blank"><img src="images/ytmath_logo.png"></a>
-Studio YarnTale - The School of Mathematics 🎓<br/>
+Studio YarnTale - The School of Mathematics 🎓
 </div>
-<img src="images/about_top.jpg" alt ="About me" style="width: 990px;"/>
 </div>
+
+
 <!-- ===== NAV MENU EN===== -->
-<div class="link-grouph">
+<div class="link-group" style="font-size:13px; margin-top:-10px; margin-bottom:-10px;">
 <a class="link-buttonh" href="https://studioyarntale.github.io/math/storytime/people_en.html" target="_blank">🏡 YarnTale World</a>
 <a class="link-buttonh" href="https://studioyarntale.github.io/math/home/insight_en.html" target="_blank">🎓 Maths Insight</a>
 <a class="link-buttonh" href="https://studioyarntale.github.io/math/home/playground_en.html" target="_blank">🧮 Maths Playground</a>
@@ -45,95 +126,65 @@ Studio YarnTale - The School of Mathematics 🎓<br/>
 </div>
 
 <!-- ===== MAIN FRAME ===== -->
-<div class="main-wrapper" style="padding-top:0px;">
-<h2 style="color:#5a8d8a;">A Little About Me and the World of YarnTale<br/> &nbsp; &nbsp; &nbsp; <img src="images/line.jpg"/></h2>
+<div class="hero"><img src="images/main.jpg">
 
-<div class="content-layout">
+<div class="curiosity">Curiosity comes first...</div>
+<div class="welcome">Welcome to YarnTale!</div>
+<div class="slogan">🌱 A place where mathematics becomes a natural part of everyday life.</div>
 
-
-<!-- ============================= -->
-<!-- *****  The CONTENT AREA ***** -->
-<!-- ============================= -->
-<aside class="sidebar">
-<div class="link-group">
-<!-- ====sidebar links EN ===== -->
-🧭 Explore🌿 
-<a class="link-button" href="https://studioyarntale.github.io/math/home/main_en.html" target="_blank">Home page</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/about_en.html" target="_blank">About Me & YarnTale</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/insight_en.html" target="_blank">Maths Insight</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/playground_en.html" target="_blank">Maths Playground</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/parent_en.html" target="_blank">Entry for Parents</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/child_en.html" target="_blank">For Kids Only</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/mathmap_en.html" target="_blank">📚 Maths Curriculum</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/dictionary.html" target="_blank">Maths Dictionary</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/home/contact_en.html" target="_blank">Contact Us</a>
-🎓 Learning Resources
-<a class="link-button" href="https://studioyarntale.github.io/math/storytime/people_en.html" target="_blank">🏡 YarnTale World</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/cards/formulae.html" target="_blank">🧮 Formulae</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/cards/index.html" target="_blank">📐 Learning Cards</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/tools/index.html" target="_blank">🧮 Interactive Math Tools</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/storytime/index.html" target="_blank">📐 Maths stories</a>
-<a class="link-button" href="https://studioyarntale.github.io/math/quiz/index.html" target="_blank">❓ Quizzes, Exercises & Problems</a>
-🌿 Recommended Resources
-<a class="link-button" href="#">🏆 Olympiad Problems</a>
-<a class="link-button" href="#">📝 Revision Notes</a>
-<a class="link-button" href="#">📖 Recommended Books</a>
-<a class="link-button" href="#">🎯 GCSE Past Papers</a>
-<a class="link-button" href="#">🎓 A-Level Past Papers</a>
-
+<div class="kids portal">
+<a href="https://studioyarntale.github.io/math/home/playground_en.html" target="_blank">
+<h2>Math Playground for Kids</h2>
+<p>Explore • Imagine • Create • Discover</p>
+</a>
 </div>
-</aside>
 
-<main class="about">
+<div class="teens portal">
+<a href="https://studioyarntale.github.io/math/home/insight_en.html" target="_blank">
+<h2>Math Insight for Teens</h2>
+<p>Think • Understand • Connect • Grow</p>
+</a>
+</div>
 
-<p>Hello!<br/>
-My name is Grandma Oli. 😊
-<br/><br/>
-Many years ago I was a little girl too. I was curious and quick to learn, but at the same time I had a very vivid imagination. When I grew up, I decided to study Physics and Mathematics at university. I think it was because these subjects gave me the freedom to explore the most incredible ideas.
-<br/><br/>
-During my third year at university I saw a computer for the first time. It looked nothing like today's laptops. It filled almost an entire room, was about the size of a large refrigerator, and programs were entered using punched cards. These were stiff paper cards with tiny holes punched in carefully chosen positions. Every letter, number and symbol had its own unique pattern of holes. Those computers were called Mainframes.
-<br/><br/>
-It was love at first sight. Especially after our department opened a computer classroom with display terminals. I could happily stay there until late in the evening. Since then, computers have been my good friends. I learned to program in FORTRAN and BASIC.
-<br/><br/>
-Later I worked as a school teacher, taught Physics and Mathematics at university, prepared students for university entrance, carried out scientific research and eventually earned my PhD.
-<br/><br/>
-Life later brought me to England. Here I continued learning, studied programming, designed websites, worked as an interpreter and tried many different professions. But the thing I have always enjoyed most is learning something new myself and helping other people learn.
-<br/><br/>
-When my granddaughter Nastya was born, I wanted to create a special world just for her — a place where we could play, think, read fairy tales, solve puzzles, draw, make things with our hands and discover new ideas together. That is how YarnTale was born.
-<br/><br/>
-At first it was simply a gift for one little girl. Then I realised that perhaps other children might enjoy this world as well. So now everyone who loves discovering new things is welcome to join our adventure.
-<br/><br/>
-Like the fairy-tale world itself, YarnTale is alive. It keeps growing and changing. I am constantly creating new characters, writing stories, designing interactive activities, making learning cards and inventing mathematical adventures featuring the YarnTale characters.
-<br/><br/>
-There is much more here than mathematics. You will also find fairy tales, crafts, drawing and creative activities. In fact, all the characters first appeared as little crochet toys that I made myself. That is where the name <b>YarnTale</b> comes from — fairy tales growing from a ball of yarn.
-<br/><br/>
-Here mathematics is not a separate abstract subject. It is woven naturally into everyday life. Children begin to understand why mathematical ideas matter and where they appear all around us.
-<br/><br/>
-People often say that visitors trust an author more if they can see a portrait. Well then... if it has to be done, it has to be done. 😊 Here I am! Please take a look. That's me, riding a unicorn just as every proper fairy should. Beside me is little Nastya, while the heavenly creatures watch us with great excitement — or perhaps a little surprise. This is exactly how Nastya imagined me.
-<br/><br/>
-And if you like, you can simply call me <b>Grandma Oli</b>. I think it is the warmest name anyone could have.
-<br/><br/>
-Welcome to YarnTale! 🌿
-<br/><br/>
-<img src="images/me.jpg" alt="Grandma Oli" style="width:650px;"/>
-</p>
-
-</main>
+<div class="about">
+<h3>About the Project</h3>
+Mathematics lives here alongside stories,<br/> curiosity and imagination.<br>
+We believe that learning begins with wonder.<br>
+When ideas become familiar, understanding comes naturally.<br>
+Take your time. Look around. Ask questions.<br>
+Discover how mathematics helps us understand nature, science<br />and the world around us.<br><br>
+<b>This is a place where mathematics feels at home.</b>
+</div>
+</div>
 
 
 
-</div> <!--content-area-->
 
-</div><!--main-wrapper-->
-
-<div class="olisoft-footer" style="margin:10px;">
-2026 © OliSoft | Studio YarnTale — The School of Mathematics | All rights reserved.
+<!-- ===Social=== -->
+<div class="olisoft-footer" style="margin:0px;">
 <div class="social-links">
 <a href="https://www.facebook.com/yarntale.math/" target="_blank"><img src="images/icons/facebook.jpg" alt="Facebook"></a>
 <a href="https://www.youtube.com/@YarnTaleStudio-v1o" target="_blank"><img src="images/icons/youtube.jpg" alt="YouTube"></a>
 <a href="https://www.instagram.com/sophieowlcrochet/" target="_blank"><img src="images/icons/instagram.jpg" alt="Instagram"></a>
 <a href="https://uk.pinterest.com/yarntale_crochet/yarntale/" target="_blank"><img src="images/icons/pinterest.jpg" alt="Pinterest"></a>
+<a href="https://vk.com/yarntalemath" target="_blank"><img src="images/icons/vk.jpg" alt="VK"></a>
+<a href="https://ok.ru/group/70000041335822" target="_blank"><img src="images/icons/ok.jpg" alt="Одноклассники"></a>
+<a href="https://www.facebook.com/yarntalemath.ru/" target="_blank"><img src="images/icons/rutube.jpg" alt="RuTube"></a>
+<a href="https://t.me/StudioYarntale" target="_blank"><img src="images/icons/telegram.jpg" alt="Telegram"></a>
 </div>
-</div>
+</div><!-- ===Social=== -->
+
+
+<!-- ===Bottom tree=== -->
+<div class="main_tree"><a href="children_en.html">
+    <span class="kids-sign">
+    <b>Entry for Kids</b><br>
+    <span class="small">Adults are welcome,<br>only if accompanied<br>🗝️<b>by a child</b>🐿️</span>
+</span>
+</a></div>
+
+<!-- ===FOOTER=== -->
+<div class="olisoft-footer" style="margin-top:-20px;">2026 © OliSoft | Studio YarnTale — The School of Mathematics | All rights reserved.</div>
+
 </body>
 </html>

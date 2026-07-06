@@ -60,6 +60,46 @@
             gap: 10px;
             font-size:14px;
         }
+
+
+.social-links{
+    width:900px;
+    margin:-15px auto 0;
+    display:flex;
+    justify-content:flex-end;
+    gap:3px;
+}
+
+.social-links a{
+    display:block;
+    width:25px;
+    height:25px;
+    border-radius:8px;
+    overflow:hidden;
+    opacity:.70;
+    transition:all .25s ease;
+    filter:saturate(.55) brightness(1.03) contrast(.95);
+    box-shadow:0 2px 8px rgba(90,141,138,.12);
+}
+
+.social-links a:hover{
+    opacity:1;
+    transform:translateY(-3px) scale(1.10);
+    filter:none;
+    box-shadow:0 6px 18px rgba(90,141,138,.28);
+}
+
+.social-links img{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+        .social-links img{ transition:0.2s;}
+.social-links img:hover{transform:translateY(-2px);}
+.olisoft-footer{ color:#78AFAC; font-style:italic; margin:0;}
+.social-links{ display:flex; gap:6px;}
+
     </style>
 </head>
 <body>
@@ -672,9 +712,26 @@ Studio YarnTale - The School of Mathematics 🎓<br/>
 
 </div> <!--content-area-->
 
+<br /><br />
+
+<!-- ===Social=== -->
+<div class="olisoft-footer" style="margin:0px;">
+<div class="social-links">
+<a href="https://www.facebook.com/yarntale.math/" target="_blank"><img src="images/icons/facebook.jpg" alt="Facebook"></a>
+<a href="https://www.youtube.com/@YarnTaleStudio-v1o" target="_blank"><img src="images/icons/youtube.jpg" alt="YouTube"></a>
+<a href="https://www.instagram.com/sophieowlcrochet/" target="_blank"><img src="images/icons/instagram.jpg" alt="Instagram"></a>
+<a href="https://uk.pinterest.com/yarntale_crochet/yarntale/" target="_blank"><img src="images/icons/pinterest.jpg" alt="Pinterest"></a>
+<a href="https://vk.com/yarntalemath" target="_blank"><img src="images/icons/vk.jpg" alt="VK"></a>
+<a href="https://ok.ru/group/70000041335822" target="_blank"><img src="images/icons/ok.jpg" alt="Одноклассники"></a>
+<a href="https://www.facebook.com/yarntalemath.ru/" target="_blank"><img src="images/icons/rutube.jpg" alt="RuTube"></a>
+<a href="https://t.me/StudioYarntale" target="_blank"><img src="images/icons/telegram.jpg" alt="Telegram"></a>
+</div>
+</div><!-- ===Social=== -->
 
 </div><!--main-wrapper-->
-<<div class="olisoft-footer">2026 © OliSoft — Математическая площадка YarnTale</div>
+
+<!-- ===FOOTER=== -->
+<div class="olisoft-footer" style="margin-top:20px;">2026 © OliSoft | Studio YarnTale — The School of Mathematics | All rights reserved.</div>
 <!--<div class="olisoft-footer">2026 © OliSoft — YarnTale Math Playground</div>-->
 
 

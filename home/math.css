@@ -351,3 +351,224 @@ color:#006633;
 }
 
 .content-layout{display:flex; align-items:flex-start;  gap:25px;}
+
+
+
+
+/*====================================================
+                MAZE PAGE
+====================================================*/
+
+/* ---------- Main container ---------- */
+.maze-wrapper{
+    width:900px;
+    margin:20px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* ---------- Side columns ---------- */
+.left_pics,
+.right_pics{
+    width:175px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:22px;
+}
+
+/* ---------- Centre ---------- */
+.center-maze{
+    width:550px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.center-maze img{
+    width:550px;
+    display:block;
+}
+/*====================================================
+                SIDE LINKS
+====================================================*/
+
+.left_pics a,
+.right_pics a{
+    position:relative;
+    display:block;
+    width:175px;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* ---------- Pictures ---------- */
+.left_pics img,
+.right_pics img{
+    display:block;
+    width:175px;
+    transition:
+        transform .35s ease,
+        filter .35s ease,
+        box-shadow .35s ease;
+}
+
+/* ---------- Hover ---------- */
+.left_pics a:hover img,
+.right_pics a:hover img{
+    transform:scale(1.05);
+    filter:brightness(1.05);
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+}
+
+/*====================================================
+                CAPTIONS
+====================================================*/
+.maze-link{
+    position:absolute;
+    left:10px;
+    right:10px;
+    bottom:12px;
+    text-align:center;
+    font-family:"Comic Sans MS", cursive;
+    font-size:18px;
+    font-weight:bold;
+    color:#5b4327;
+    line-height:1.15;
+    text-shadow:
+        1px 1px 2px rgba(255,255,255,.9),
+        0 0 4px rgba(255,255,255,.6);
+    transition:
+        color .30s ease,
+        text-shadow .30s ease;
+    pointer-events:none;
+}
+
+/* ---------- Caption hover ---------- */
+.left_pics a:hover .maze-link,
+.right_pics a:hover .maze-link{
+    color:#990000;
+    text-shadow:
+        0 0 6px rgba(255,255,255,.9),
+        1px 1px 2px rgba(255,255,255,.8);
+}
+
+/*====================================================
+                    MAZE PAGE
+====================================================*/
+
+/* ---------- Main layout ---------- */
+.maze-wrapper{
+    width:900px;
+    margin:20px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* ---------- Left & Right columns ---------- */
+.left_pics,
+.right_pics{
+    width:175px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:22px;
+}
+
+/* ---------- Centre ---------- */
+.center-maze{
+    width:550px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.center-maze img{
+    width:550px;
+    display:block;
+}
+
+/*====================================================
+                    SIDE LINKS
+====================================================*/
+.left_pics a,
+.right_pics a{
+    position:relative;
+    display:block;
+    width:175px;
+    text-decoration:none;
+    cursor:pointer;
+    transition:
+        transform .35s ease;
+}
+
+/* ---------- Side images ---------- */
+.left_pics img,
+.right_pics img{
+    display:block;
+    width:175px;
+    transition:
+        transform .35s ease,
+        filter .35s ease,
+        box-shadow .35s ease;
+}
+
+/*====================================================
+                    CAPTIONS
+====================================================*/
+.maze-link{
+    position:absolute;
+    left:10px;
+    right:10px;
+    bottom:12px;
+    text-align:center;
+    font-family:"Comic Sans MS", cursive;
+    font-size:18px;
+    font-weight:bold;
+    color:#5b4327;
+    color:#5a8d8a;
+    line-height:1.15;
+    text-shadow:
+        1px 1px 2px rgba(255,255,255,.9),
+        0 0 4px rgba(255,255,255,.6);
+    pointer-events:none;
+    transition:
+        color .35s ease,
+        transform .35s ease,
+        text-shadow .35s ease;
+}
+
+/*====================================================
+                    HOVER
+====================================================*/
+/* Вся карточка чуть приподнимается */
+.left_pics a:hover,
+.right_pics a:hover{
+    transform:translateY(-3px);
+}
+
+/* Картинка */
+.left_pics a:hover img,
+.right_pics a:hover img{
+    transform:scale(1.05);
+    filter:brightness(1.05);
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+}
+/* Подпись */
+.left_pics a:hover .maze-link,
+.right_pics a:hover .maze-link{
+    color:#990000;
+    transform:scale(1.08);
+    text-shadow:
+        0 0 8px rgba(255,255,255,.95),
+        1px 1px 2px rgba(255,255,255,.8);
+}
+
+
+
+
+.social-links img{ transition:0.2s;}
+.social-links img:hover{transform:translateY(-2px);}
+.olisoft-footer{ color:#78AFAC; font-style:italic; margin:0;}
+.social-links{ display:flex; gap:6px;}

@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="math.css">
 <link rel="icon" type="image/png" href="images/ytmath_icon.png">
 
+
+
+
 <style>
 body{background:linear-gradient(to bottom, #DBDED1, #f3fbfb, #e8f5f4 );}
 .main-title{
@@ -63,6 +66,39 @@ body{background:linear-gradient(to bottom, #DBDED1, #f3fbfb, #e8f5f4 );}
 /* ---------- ABOUT ---------- */
 .about{top:450px;left:270px; width:440px; color:#444; font-size:14px; line-height:1.2;}
 .about h3{margin:0 0 8px 0; color:#2d5f5d;}
+
+
+/* ---------- Bottom tree ---------- */
+.main_tree{ width:1000px; height:380px; margin:0 auto; background-size:contain;
+background:url("images/main_tree.jpg") center center no-repeat;}
+
+.main_tree a{display:block; width:100%; height:100%;}
+.main_tree:hover{    background-image:url("images/main_tree_hover.jpg");}
+
+.kids-sign{
+    position:absolute;
+    top:940px;          /* подгони под табличку */
+    left:49%;
+    transform:translateX(-50%);
+    width:180px;
+    font-family:"Comic Sans MS", cursive;
+    text-align:center;
+    color:#5a4630;
+    font-size:17px;
+    font-weight:bold;
+    line-height:1;
+    text-shadow: 1px 1px 2px rgba(255,255,255,.8), 0 0 6px rgba(255,255,255,.5);}
+
+.kids-sign .small{
+    display:block;
+    margin-top:7px;
+    font-size:12px;
+    font-weight:normal;
+    line-height:1;
+    color:#6a5338;
+}
+.kids-sign b{ transition:color .35s ease;}
+.main_tree:hover .kids-sign b{color:#990000;}
 
 
 </style>
@@ -130,18 +166,30 @@ und die Welt um uns herum zu verstehen.<br><br>
 </div>
 </div>
 
-<!-- ===FOOTER=== -->
-<div class="olisoft-footer" style="margin:-10px;">
-2026 © OliSoft | Studio YarnTale — Mathematische Spielwiese | Alle Rechte vorbehalten.
-
+<!-- ===Social=== -->
+<div class="olisoft-footer" style="margin:0px;">
 <div class="social-links">
 <a href="https://www.facebook.com/yarntale.math/" target="_blank"><img src="images/icons/facebook.jpg" alt="Facebook"></a>
 <a href="https://www.youtube.com/@YarnTaleStudio-v1o" target="_blank"><img src="images/icons/youtube.jpg" alt="YouTube"></a>
 <a href="https://www.instagram.com/sophieowlcrochet/" target="_blank"><img src="images/icons/instagram.jpg" alt="Instagram"></a>
 <a href="https://uk.pinterest.com/yarntale_crochet/yarntale/" target="_blank"><img src="images/icons/pinterest.jpg" alt="Pinterest"></a>
 </div>
-</div><!-- ===FOOTER=== -->
+</div><!-- ===Social=== -->
 
+
+<!-- ===Bottom tree=== -->
+<div class="main_tree"><a href="children_en.html">
+    <span class="kids-sign">
+    <b>Eingang für Kinder</b><br>
+    <span class="small">Erwachsene dürfen<br>nur in Begleitung eines<br>🗝️<b>Kindes</b>🐿️<br/>eintreten </span>
+</span>
+</a></div>
+
+
+<!-- ===FOOTER=== -->
+<div class="olisoft-footer" style="margin-top:-20px;">
+2026 © OliSoft | Studio YarnTale — Mathematische Spielwiese – Alle Rechte vorbehalten.
+</div>
 
 </body>
 </html>
